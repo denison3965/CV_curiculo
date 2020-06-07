@@ -20,6 +20,8 @@ header{
 	border-radius:150px;
 	margin:70px;
 	overflow: hidden;
+	border:2px solid #ffbd50;
+	box-shadow: 5px;
 }
 .header_right{
 	flex:1.7;
@@ -262,6 +264,7 @@ section{
 }
 .color_cinxa3_white{
 	background-color:#FFFFFF;
+
 }
 
 
