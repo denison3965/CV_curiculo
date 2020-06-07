@@ -4,15 +4,16 @@
 		<meta charset="UTF-8">
 		<title>Denison Portela</title>
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<script type="text/javascript" src="assets/js/script.js"></script>
 	</head>
 	<body>
 		<header>
-			<div class="img">
+			<div class="img color_cinxa2_white" id="change_color2">
 				<div class="local_img">
 					<img src="assets/img/foto2.jpg" height="320px" width="240px" />
 				</div>
 			</div>
-			<div class="header_right">
+			<div class="header_right .color_cinxa3" id="change_color3">
 				<div class="header_right_inside container_left">
 
 					<div class="header_nome">
@@ -23,7 +24,14 @@
 								<div id="descricao">Programador back-end & front-end</div>
 							</div>
 						</div>
-						<div class="header_nome_left"></div>
+						<div class="header_nome_left">
+							<div class="toggle">
+								<div class="cor_do_site">Dark</div>
+				                <input type="checkbox" id="foo" onclick="MudarCor()" checked>
+				                <label for="foo"></label>
+				                <div class="cor_do_site">Light</div>
+				            </div>
+						</div>
 
 					</div>
 
@@ -42,7 +50,7 @@
 							<div class="intem_sub_hearder" id="link_github">
 								
 									<div><strong>github</strong></div>
-									<div><a href="https://github.com/denison3965">Denison3965</a></div>
+									<div><a href="https://github.com/denison3965" target="_blank">Denison3965</a></div>
 
 							</div>
 							<div class="intem_sub_hearder" id ="link_email">
@@ -58,11 +66,11 @@
 
 
 		<section>
-				<div class="left_side color_cinxa1">
+				<div class="left_side color_cinxa1_white " id="change_color1">
 					<div class="titulo"><strong>intro</strong><br/></div>
 					<div class="sub_titulo">Um poco sobre mim.</div>
 				</div>
-				<div class="rigth_side color_cinxa2 ">
+				<div class="rigth_side color_cinxa2_white" id="change_color2">
 
 					<div class="formata_right container_left set_margin">
 
@@ -75,11 +83,11 @@
 		</section>
 
 		<section>
-			<div class="left_side color_cinxa2">
+			<div class="left_side color_cinxa2_white " id="change_color2">
 				<div class="titulo"><strong>Habilidades</strong><br/></div>
 				<div class="sub_titulo">Habilidades, aptidões e ferramentas</div>
 			</div>
-			<div class="rigth_side color_cinxa3">
+			<div class="rigth_side color_cinxa3_white" id="change_color3">
 				<div class="habilidade container_left set_margin">
 					<div class="linha1_habilidade">
 						<div class="coluna1_habilidade">
@@ -148,11 +156,11 @@
 		</section>
 
 		<section>
-			<div class="left_side color_cinxa1">
+			<div class="left_side color_cinxa1_white " id="change_color1" >
 				<div class="titulo"><strong>Skills</strong><br/></div>
 				<div class="sub_titulo">Progreço e nível para parâmetro</div>
 			</div>
-			<div class="rigth_side color_cinxa2">
+			<div class="rigth_side color_cinxa2_white " id="change_color2" >
 					<div class=" skils container_left set_margin">
 							<div class="linha1">
 								<div class="coluna1">
