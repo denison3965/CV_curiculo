@@ -1,3 +1,9 @@
+
+function ScrollPage () {
+	window.scrollBy(3000, 4000);
+}
+
+
 function MudarCor() {
 	let set_cor2 = document.querySelectorAll("#change_color2");
 	let set_cor3 = document.querySelectorAll("#change_color3");

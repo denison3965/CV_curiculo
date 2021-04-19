@@ -35,6 +35,17 @@
     }
 }
 
+
+@keyframes opacity_effect {
+    /* Passos */
+    from {
+		opacity: 0;
+    }
+    to {
+		opacity: 1;
+    }
+}
+
 @keyframes progress_bar_10 {
 	from{
 		width: 0;
@@ -271,8 +282,9 @@ header{
 }
 .local_img{
 	width:232px;
+	min-width:232px;
 	height:232px;
-	border-radius:150px;
+	border-radius:50%;
 	margin:70px;
 	overflow: hidden;
 	border:2px solid #ffbd50;
@@ -302,11 +314,29 @@ section{
 	flex:2;
 	display: flex;
 	align-items: center;
+	flex-direction: column;
 
+}
+.buttons_area{
+	display: flex;
+	align-items: flex-end;
+	width: 100%;
+	flex: 1;
+	padding-left: 30px;
+}
+
+@media only screen and (max-width: 800px){
+	.buttons_area{
+		flex-direction: column;
+		align-items: center !important;
+	}
 }
 .header_nome_right_conteudo{
 	display:flex;
 	flex-direction: column;
+	justify-content: flex-end;
+	margin-bottom: 50px;
+	flex: 3;
 }
 #primeiro_nome{
 	color: #868788;
@@ -614,6 +644,10 @@ section{
 	margin-left: 10px;
 	margin-right: 10px;
 }
+.links{
+	color: #E0A80D;
+	text-decoration: none;
+}
 
 
 /*EDUTACION*/
@@ -729,6 +763,7 @@ section{
 	margin-left: 10px;
 }
 
+
 @media only screen and (max-width: 1400px) {
 	.modal_area{
 		max-width: 95vw !important;
@@ -743,3 +778,29 @@ section{
 		margin:none !important;
 	}
 }
+
+/*BOTÃO*/
+
+.BUTTON_EFG {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #FFFFFF;
+	font-family: Helvetica;
+	font-size: 18px;
+	font-weight: 100;
+	padding: 15px;
+	background-color: #E0A80D;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	margin-bottom: 20px;
+
+	animation: opacity_effect 3s;
+	animation-iteration-count: 1;
+ }
+
+ .BUTTON_EFG:hover {
+	 color: #F8F8F8;
+ }
